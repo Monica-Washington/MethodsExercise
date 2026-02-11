@@ -18,6 +18,26 @@ namespace MethodsExercise
             Console.WriteLine($"One day, {userName} was walking in the park wearing a {favColor} blouse. {userName} saw a {favAnimal} listening to {favBand}.");
         }
 
+        public static void Practice()
+        {
+            Console.WriteLine("What is your name?");
+            string userName = Console.ReadLine();
+            Console.WriteLine($"Hello, {userName}! What are your wedding colors?");
+            string wedColor = Console.ReadLine();
+            Console.Write("What is your wedding venue?");
+            string wedVenue = Console.ReadLine();
+            Console.Write("What is your wedding budget?");
+            string wedBudget = Console.ReadLine();
+            Console.Write("How many guests are you inviting?");
+            string wedGuest = Console.ReadLine();
+            Console.Write("How would you describe yourself?");
+            string selfdef = Console.ReadLine();
+            Console.WriteLine($"That's great, {userName}! I will refer you to another planner!");
+            
+
+            Console.WriteLine($"I met {userName} at a bridal show. {userName} has chosen {wedColor} as her wedding colors. She is getting marrid at {wedVenue}. The guest count is {wedGuest}. {userName}'s wedding budget is {wedBudget}. {userName} describes herself as {selfdef}. I will refer her to another planner.");
+        }
+
         public static int Add(int numOne, int numTwo)
         {
             return numOne + numTwo;
@@ -47,13 +67,9 @@ namespace MethodsExercise
                 //sum = sum + number;
                 sum += number;
             }
-            return sum; 
-
-            {
-                
+            return sum;
             }
-        }
-
+        
         static void Main(string[] args)
         {
           //Madlib();
@@ -62,7 +78,12 @@ namespace MethodsExercise
           //Console.WriteLine(Subtract(10, 2));
           //Console.WriteLine(Multiply(10, 2));
           //Console.WriteLine(Divide(20, 10));
-          Console.WriteLine(Sum(1, 1, 1, 1, 1));
+          //Console.WriteLine(Sum(1, 1, 1, 1, 1));
+          Practice();
+          
+          
+          
+
 
 
         }
